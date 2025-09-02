@@ -56,8 +56,8 @@ export function TrainingsSection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </Section>
   )
