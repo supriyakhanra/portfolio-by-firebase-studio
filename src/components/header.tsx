@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const navLinks = [
@@ -100,6 +100,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                    A list of navigation links to sections of the page.
+                </SheetDescription>
               <div className="flex flex-col space-y-4">
                 <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setIsSheetOpen(false)}>
                   <Sparkles className="h-6 w-6 text-primary" />
