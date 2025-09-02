@@ -19,19 +19,19 @@ export function HeroSection() {
         id="about" 
         className={cn(
             "relative w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-background via-secondary/50 to-background opacity-0",
-             inView && "animate-scroll-in"
+             inView ? "animate-scroll-in" : "opacity-0"
         )}
     >
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight font-headline">
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Hi, I&apos;m a Developer
+              Hi, I'm a Developer
             </span>
             Building Digital Experiences
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-            I&apos;m a passionate developer with a knack for creating beautiful, functional, and user-centric web applications. I love to learn new technologies and build cool things.
+            I'm a passionate developer with a knack for creating beautiful, functional, and user-centric web applications. I love to learn new technologies and build cool things.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <Button asChild size="lg">

@@ -22,7 +22,7 @@ export function Section({ id, children, className }: SectionProps) {
       id={id} 
       className={cn(
         "container py-16 md:py-24 opacity-0",
-        inView && "animate-scroll-in",
+        inView ? "animate-scroll-in" : "opacity-0",
         className
       )}
     >
