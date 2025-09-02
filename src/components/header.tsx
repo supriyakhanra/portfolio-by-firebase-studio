@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Menu, Sparkles } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -22,6 +22,36 @@ const navLinks = [
 
 export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-30% 0px -70% 0px" }
+    );
+
+    navLinks.forEach((link) => {
+      const element = document.querySelector(link.href);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      navLinks.forEach((link) => {
+        const element = document.querySelector(link.href);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -35,7 +65,10 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className={cn(
+                "transition-colors hover:text-foreground/80 text-foreground/60",
+                activeSection === link.href.substring(1) && "text-foreground underline underline-offset-4"
+              )}
             >
               {link.name}
             </Link>
@@ -61,7 +94,10 @@ export function Header() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="px-2 py-1 rounded-md transition-colors hover:bg-muted"
+                      className={cn(
+                        "px-2 py-1 rounded-md transition-colors hover:bg-muted",
+                         activeSection === link.href.substring(1) && "bg-muted font-semibold"
+                      )}
                       onClick={() => setIsSheetOpen(false)}
                     >
                       {link.name}

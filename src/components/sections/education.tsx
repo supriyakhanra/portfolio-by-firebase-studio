@@ -27,7 +27,7 @@ export function EducationSection() {
         <div className="space-y-12">
           {educationData.map((edu, index) => (
             <div key={index} className="grid md:grid-cols-2 gap-8 items-center relative">
-              <div className={cn("flex md:justify-end", index % 2 === 0 ? "md:order-1" : "md:order-2 md:justify-start")}>
+              <div className={cn("flex", index % 2 === 0 ? "md:order-1 md:justify-end" : "md:order-2 md:justify-start")}>
                 <Card className="w-full max-w-md shadow-lg hover:shadow-primary/20 transition-shadow">
                   <CardHeader>
                     <CardTitle className="font-headline text-xl">{edu.degree}</CardTitle>
@@ -43,7 +43,7 @@ export function EducationSection() {
                   <GraduationCap className="h-6 w-6" />
                 </div>
               </div>
-               <div className={cn("md:hidden", index % 2 === 0 ? "md:order-1" : "md:order-2")}></div>
+               <div className={cn("hidden md:block", index % 2 === 0 ? "md:order-2" : "md:order-1")}></div>
             </div>
           ))}
         </div>
