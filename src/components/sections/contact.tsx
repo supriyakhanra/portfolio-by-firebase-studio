@@ -96,15 +96,15 @@ export function ContactSection() {
             <div className="space-y-4">
                 <div className="flex items-center gap-4">
                     <Mail className="h-6 w-6 text-primary" />
-                    <span className="text-lg">supriyakhanra3@gmail.com</span>
+                    <span className="text-lg">can't-share@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <Phone className="h-6 w-6 text-primary" />
-                    <span className="text-lg">+91-7047021532</span>
+                    <span className="text-lg">+91-0000000000</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <MapPin className="h-6 w-6 text-primary" />
-                    <span className="text-lg">Tamluk, West Bengal</span>
+                    <span className="text-lg">Kolkat, West Bengal</span>
                 </div>
             </div>
         </div>
