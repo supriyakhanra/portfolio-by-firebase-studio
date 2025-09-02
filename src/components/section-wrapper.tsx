@@ -1,5 +1,8 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+import { useInView } from "react-intersection-observer";
 
 type SectionProps = {
   id: string;
@@ -8,8 +11,21 @@ type SectionProps = {
 }
 
 export function Section({ id, children, className }: SectionProps) {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id={id} className={cn("container py-16 md:py-24", className)}>
+    <section 
+      ref={ref} 
+      id={id} 
+      className={cn(
+        "container py-16 md:py-24 opacity-0",
+        inView && "animate-scroll-in",
+        className
+      )}
+    >
       {children}
     </section>
   )

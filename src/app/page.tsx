@@ -7,7 +7,6 @@ import { ProjectsSection } from "@/components/sections/projects";
 import { HobbiesSection } from "@/components/sections/hobbies";
 import { InterestsSection } from "@/components/sections/interests";
 import { ContactSection } from "@/components/sections/contact";
-import { GameSection } from "@/components/sections/game-section";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <ProjectsSection />
         <HobbiesSection />
         <InterestsSection />
-        <GameSection />
         <ContactSection />
       </main>
     </div>

@@ -1,11 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Github, Linkedin, Twitter, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useInView } from "react-intersection-observer";
+import { cn } from "@/lib/utils";
 
 export function HeroSection() {
+    const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <section id="about" className="relative w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-background via-secondary/50 to-background">
+    <section 
+        ref={ref}
+        id="about" 
+        className={cn(
+            "relative w-full py-20 md:py-32 lg:py-40 bg-gradient-to-br from-background via-secondary/50 to-background opacity-0",
+             inView && "animate-scroll-in"
+        )}
+    >
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight font-headline">
