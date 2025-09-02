@@ -1,3 +1,29 @@
+import { Header } from "@/components/header";
+import { HeroSection } from "@/components/sections/hero";
+import { SkillsSection } from "@/components/sections/skills";
+import { EducationSection } from "@/components/sections/education";
+import { ExperienceSection } from "@/components/sections/experience";
+import { ProjectsSection } from "@/components/sections/projects";
+import { HobbiesSection } from "@/components/sections/hobbies";
+import { InterestsSection } from "@/components/sections/interests";
+import { ContactSection } from "@/components/sections/contact";
+import { GameSection } from "@/components/sections/game-section";
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="flex min-h-screen w-full flex-col">
+      <Header />
+      <main className="flex flex-col">
+        <HeroSection />
+        <EducationSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <HobbiesSection />
+        <InterestsSection />
+        <GameSection />
+        <ContactSection />
+      </main>
+    </div>
+  );
 }
