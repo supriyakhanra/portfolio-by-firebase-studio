@@ -5,17 +5,23 @@ import { cn } from "@/lib/utils";
 
 const educationData = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "University of Technology",
-    period: "2020 - 2022",
-    details: "Focused on advanced algorithms, machine learning, and distributed systems. Published a paper on novel AI techniques.",
+    degree: "B.Tech in Computer Science & Engineering (AI & ML)",
+    institution: "Brainware University",
+    period: "2022 - 2026",
+    details: "Currently pursuing my bachelor's degree with a focus on Artificial Intelligence and Machine Learning. Latest SGPA: 9.13",
   },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "State College of Engineering",
-    period: "2016 - 2020",
-    details: "Graduated with honors. Led the university's coding club and participated in several hackathons.",
+    degree: "Higher Secondary (12th)",
+    institution: "Byabattarhat Adarsha High School",
+    period: "2020 - 2022",
+    details: "Completed my 12th grade under WBCHSE board, securing 82.2%.",
   },
+  {
+    degree: "Secondary (10th)",
+    institution: "Byabattarhat Jnanadamayee Balika Vidyalaya (H.S.)",
+    period: "2020",
+    details: "Completed my 10th grade under WBBSE board, securing 85.85%.",
+  }
 ];
 
 export function EducationSection() {

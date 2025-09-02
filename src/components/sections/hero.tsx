@@ -26,16 +26,16 @@ export function HeroSection() {
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight font-headline">
             <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Hi, I'm a Developer
+              Hi, I'm Supriya Khanra
             </span>
-            Building Digital Experiences
+            Aspiring AI & ML Engineer
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-            I'm a passionate developer with a knack for creating beautiful, functional, and user-centric web applications. I love to learn new technologies and build cool things.
+            I aim to apply my academic achievements and coursework knowledge to real-world projects, leveraging my skills in computer science, artificial intelligence, and machine learning to contribute to innovative solutions.
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <Button asChild size="lg">
-              <a href="/resume.pdf" download>
+              <a href="/Supriya_Khanra_CV.pdf" download>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
@@ -63,7 +63,7 @@ export function HeroSection() {
           <div className="absolute w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
           <Image
             src="https://picsum.photos/400/400"
-            alt="Developer Portrait"
+            alt="Supriya Khanra"
             width={400}
             height={400}
             className="rounded-full object-cover z-10 border-4 border-primary/50 shadow-2xl"

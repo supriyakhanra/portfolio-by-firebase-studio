@@ -19,6 +19,7 @@ const formSchema = z.object({
 })
 
 export function ContactSection() {
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -95,15 +96,15 @@ export function ContactSection() {
             <div className="space-y-4">
                 <div className="flex items-center gap-4">
                     <Mail className="h-6 w-6 text-primary" />
-                    <span className="text-lg">developer@email.com</span>
+                    <span className="text-lg">supriyakhanra3@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <Phone className="h-6 w-6 text-primary" />
-                    <span className="text-lg">+1 (234) 567-890</span>
+                    <span className="text-lg">+91-7047021532</span>
                 </div>
                 <div className="flex items-center gap-4">
                     <MapPin className="h-6 w-6 text-primary" />
-                    <span className="text-lg">San Francisco, CA</span>
+                    <span className="text-lg">Tamluk, West Bengal</span>
                 </div>
             </div>
         </div>

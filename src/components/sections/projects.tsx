@@ -8,27 +8,11 @@ import { Badge } from "@/components/ui/badge";
 
 const projectsData = [
   {
-    title: "Project Alpha",
-    description: "A full-stack web application for task management, built with Next.js, Prisma, and Tailwind CSS.",
+    title: "AI-Based Animal Classifier",
+    description: "Developed a deep learning-based classifier to distinguish between cats and dogs. The application allows users to upload an image and receive an instant classification result.",
     image: "https://picsum.photos/600/400?random=1",
-    imageHint: "abstract tech",
-    tags: ["Next.js", "React", "Prisma", "Auth"],
-    github: "https://github.com",
-  },
-  {
-    title: "Project Beta",
-    description: "An AI-powered chatbot for customer service, using OpenAI's API and a serverless architecture.",
-    image: "https://picsum.photos/600/400?random=2",
-    imageHint: "AI robot",
-    tags: ["AI", "Serverless", "OpenAI"],
-    github: "https://github.com",
-  },
-  {
-    title: "Project Gamma",
-    description: "A mobile-first social media app prototype designed in Figma and built with React Native.",
-    image: "https://picsum.photos/600/400?random=3",
-    imageHint: "mobile app",
-    tags: ["React Native", "Figma", "UI/UX"],
+    imageHint: "cat dog",
+    tags: ["Deep Learning", "AI", "Image Classification"],
     github: "https://github.com",
   },
 ];
@@ -37,7 +21,7 @@ export function ProjectsSection() {
   return (
     <Section id="projects" className="bg-muted/50">
       <SectionHeader title="Projects" subtitle="Some of the things I've built." />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         {projectsData.map((project, index) => (
           <Card key={index} className="overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:scale-105">
             <CardHeader className="p-0">

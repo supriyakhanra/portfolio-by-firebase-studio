@@ -4,29 +4,35 @@ import { Section, SectionHeader } from "@/components/section-wrapper";
 
 const experienceData = [
   {
-    role: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    period: "Jan 2022 - Present",
-    description: "Led the development of a new design system and component library in React, improving development efficiency by 30%. Mentored junior developers and conducted code reviews.",
+    role: "Technology Virtual Internship",
+    company: "Deloitte",
+    period: "July 2025",
+    description: "Completed a virtual internship focused on technology, gaining insights into industry practices.",
   },
   {
-    role: "Full-Stack Developer",
-    company: "Innovate Co.",
-    period: "Jun 2020 - Dec 2021",
-    description: "Developed and maintained a large-scale e-commerce platform using Next.js and Node.js. Implemented a new payment gateway, increasing conversion rates by 15%.",
+    role: "Python Technology Stack Course",
+    company: "Infosys Springboard",
+    period: "June 2025",
+    description: "Completed a comprehensive course on the Python technology stack, including Python Foundation Certification.",
   },
   {
-    role: "Software Engineer Intern",
-    company: "Data Corp.",
-    period: "May 2019 - Aug 2019",
-    description: "Worked on a data visualization dashboard using D3.js and React. Wrote scripts to automate data processing tasks, saving 10+ hours of manual work per week.",
+    role: "Industrial training on AIML",
+    company: "INTEL (Edgate Technology)",
+    period: "Jan - Feb 2025",
+    description: "Underwent industrial training focused on Artificial Intelligence and Machine Learning.",
+  },
+  {
+    role: "Workshop on Emerging-Trends",
+    company: "Self-paced",
+    period: "Aug 2024",
+    description: "Attended a 5-day workshop to learn about emerging trends in technology.",
   },
 ];
 
 export function ExperienceSection() {
   return (
     <Section id="experience">
-      <SectionHeader title="Experience" subtitle="My professional work journey." />
+      <SectionHeader title="Trainings & Workshops" subtitle="My professional learning journey." />
       <Carousel
         opts={{
           align: "start",
