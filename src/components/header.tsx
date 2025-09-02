@@ -53,6 +53,20 @@ export function Header() {
     };
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    // For mobile sheet
+    if (isSheetOpen) {
+      setIsSheetOpen(false);
+    }
+  };
+
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
@@ -65,6 +79,7 @@ export function Header() {
             <Link
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className={cn(
                 "transition-colors hover:text-foreground/80 text-foreground/60",
                 activeSection === link.href.substring(1) && "text-foreground underline underline-offset-4"
@@ -94,11 +109,11 @@ export function Header() {
                     <Link
                       key={link.name}
                       href={link.href}
+                      onClick={(e) => handleNavClick(e, link.href)}
                       className={cn(
                         "px-2 py-1 rounded-md transition-colors hover:bg-muted",
                          activeSection === link.href.substring(1) && "bg-muted font-semibold"
                       )}
-                      onClick={() => setIsSheetOpen(false)}
                     >
                       {link.name}
                     </Link>
