@@ -8,7 +8,7 @@ const educationData = [
     degree: "B.Tech in Computer Science & Engineering (AI & ML)",
     institution: "Brainware University",
     period: "2022 - 2026",
-    details: "Currently pursuing my bachelor's degree with a focus on Artificial Intelligence and Machine Learning. Latest SGPA: 9.13",
+    details: "Currently pursuing my bachelor's degree with a focus on Artificial Intelligence and Machine Learning. Latest SGPA: 9.44",
   },
   {
     degree: "Higher Secondary (12th)",

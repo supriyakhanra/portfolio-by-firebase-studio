@@ -62,7 +62,7 @@ export function HeroSection() {
         <div className="relative flex justify-center items-center">
           <div className="absolute w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
           <Image
-            src="https://picsum.photos/400/400"
+            src="/images/profile.jpg"
             alt="Supriya Khanra"
             width={400}
             height={400}

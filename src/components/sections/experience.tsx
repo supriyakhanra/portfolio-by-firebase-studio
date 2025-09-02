@@ -5,23 +5,23 @@ import { cn } from "@/lib/utils";
 
 const experienceData = [
   {
-    role: "AI/ML Intern",
-    company: "FutureTech Solutions",
-    period: "Summer 2025",
-    details: "Worked on developing a predictive analytics model for customer churn, improving prediction accuracy by 15%. Collaborated with the data science team on data preprocessing and feature engineering tasks.",
+    role: "Freshers",
+    // company: "FutureTech Solutions",
+    // period: "Summer 2025",
+    // details: "Worked on developing a predictive analytics model for customer churn, improving prediction accuracy by 15%. Collaborated with the data science team on data preprocessing and feature engineering tasks.",
   },
-  {
-    role: "Web Developer (Freelance)",
-    company: "Various Clients",
-    period: "2024 - Present",
-    details: "Designed and developed responsive websites for small businesses using modern web technologies. Focused on creating intuitive user interfaces and ensuring cross-browser compatibility.",
-  },
-  {
-    role: "Open Source Contributor",
-    company: "Community Projects",
-    period: "2023 - Present",
-    details: "Actively contributed to several open-source projects on GitHub, focusing on bug fixes, documentation, and feature implementation in Python and JavaScript-based projects.",
-  },
+  // {
+  //   role: "Web Developer (Freelance)",
+  //   company: "Various Clients",
+  //   period: "2024 - Present",
+  //   details: "Designed and developed responsive websites for small businesses using modern web technologies. Focused on creating intuitive user interfaces and ensuring cross-browser compatibility.",
+  // },
+  // {
+  //   role: "Open Source Contributor",
+  //   company: "Community Projects",
+  //   period: "2023 - Present",
+  //   details: "Actively contributed to several open-source projects on GitHub, focusing on bug fixes, documentation, and feature implementation in Python and JavaScript-based projects.",
+  // },
 ];
 
 export function ExperienceSection() {

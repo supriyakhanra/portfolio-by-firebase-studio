@@ -1,4 +1,4 @@
-# Firebase Studio
+# Supriya Khanra' Protfolio
 
 This is a NextJS starter in Firebase Studio.
 

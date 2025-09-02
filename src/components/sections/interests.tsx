@@ -4,10 +4,10 @@ import { Section, SectionHeader } from "@/components/section-wrapper";
 
 const interestsData = [
   { name: "Artificial Intelligence", icon: <BrainCircuit className="h-10 w-10" /> },
-  { name: "Space Exploration", icon: <Telescope className="h-10 w-10" /> },
-  { name: "Sustainable Tech", icon: <Leaf className="h-10 w-10" /> },
-  { name: "Open Source", icon: <Rocket className="h-10 w-10" /> },
-  { name: "Creative Writing", icon: <PenTool className="h-10 w-10" /> },
+  { name: "Deep Learning", icon: <Telescope className="h-10 w-10" /> },
+  { name: "Developement", icon: <Leaf className="h-10 w-10" /> },
+  { name: "Innovation", icon: <Rocket className="h-10 w-10" /> },
+  { name: "Creative Thinking", icon: <PenTool className="h-10 w-10" /> },
 ];
 
 export function InterestsSection() {

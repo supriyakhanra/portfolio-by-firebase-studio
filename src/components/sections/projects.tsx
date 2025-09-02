@@ -10,9 +10,9 @@ const projectsData = [
   {
     title: "AI-Based Animal Classifier",
     description: "Developed a deep learning-based classifier to distinguish between cats and dogs. The application allows users to upload an image and receive an instant classification result.",
-    image: "https://picsum.photos/600/400?random=1",
+    image: "https://images.unsplash.com/photo-1517105274840-437212774105?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "cat dog",
-    tags: ["Deep Learning", "AI", "Image Classification", "Python"],
+    tags: ["Deep Learning", "AI", "Image Classification", "Python", "TensorFlow", "CNN","Keras","Streamlit"],
     github: "https://github.com",
   },
   {
@@ -20,17 +20,18 @@ const projectsData = [
     description: "A personal portfolio website built with Next.js and Tailwind CSS to showcase my skills, projects, and experience. Fully responsive and features a clean, modern design.",
     image: "https://picsum.photos/600/400?random=2",
     imageHint: "website portfolio",
-    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    tags: ["Vibe Coding ","Next.js", "React", "Tailwind CSS", "TypeScript"],
     github: "https://github.com",
   },
   {
     title: "Task Management App",
     description: "A simple and intuitive task management application to help users organize their daily tasks. Features include adding, editing, deleting, and marking tasks as complete.",
-    image: "https://picsum.photos/600/400?random=3",
+    image: "https://images.unsplash.com/photo-1634078111133-a1e12d6131b6?q=80&w=1230&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     imageHint: "task list",
     tags: ["JavaScript", "HTML", "CSS", "SQL"],
     github: "https://github.com",
   },
+  
 ];
 
 export function ProjectsSection() {
